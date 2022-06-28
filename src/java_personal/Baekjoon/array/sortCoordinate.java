@@ -1,6 +1,7 @@
 package java_personal.Baekjoon.array;
 
 import java.util.Scanner;
+import java.util.Set;
 import java.util.Map;
 import java.util.HashMap;
 
@@ -12,14 +13,15 @@ public class sortCoordinate {
 		
 		int t = sc.nextInt();
 		
-		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
 		for (int i = 0; i < t; i++) {
 			int a = sc.nextInt();
 			int b = sc.nextInt();
 			map.put(a, b);
 		}
 		
-		System.out.println(map);
+		Set set = map.entrySet();
+		System.out.println(set);
 		sc.close();
 	}
 
