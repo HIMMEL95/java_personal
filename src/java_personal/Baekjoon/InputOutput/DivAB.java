@@ -12,6 +12,8 @@ class DivAB {
         double b = stdIn.nextInt();
 
         System.out.println(String.format("%.9f", a/b));
+        
+        stdIn.close();
     }
 }
 

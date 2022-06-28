@@ -22,6 +22,8 @@ class Avg {
         for (int j = 0; j < n; j++)
             sum += (score[j] / max) * 100;
         System.out.printf("%.6f", sum / n);
+        
+        stdIn.close();
     }
 }
 
