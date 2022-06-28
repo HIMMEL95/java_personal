@@ -26,10 +26,6 @@ class RearrangeArrayElementsBySign {
         for (Integer j : minus)
             System.out.println(j);
 
-        for (int i = 0; i < nums.length; i++) {
-            for (int j = 0; j < plus.size(); j++) {
-                if (
-
         System.out.println(Arrays.toString(result));
         return result;
     }
