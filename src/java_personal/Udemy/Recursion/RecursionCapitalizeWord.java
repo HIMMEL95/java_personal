@@ -4,8 +4,7 @@ class RecursionCapitalizeWord {
 
     public static void main(String[] args) {
 
-        RecursionCapitalizeWord rcw = new RecursionCapitalizeWord();
-        String result = rcw.capitalizeWord("i love java");
+        String result = RecursionCapitalizeWord.capitalizeWord("i love java");
         System.out.println(result);
 
     }

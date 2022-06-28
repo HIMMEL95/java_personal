@@ -4,8 +4,7 @@ class RecursionFirstUppercase {
 
     public static void main(String[] args) {
 
-        RecursionFirstUppercase rfu = new RecursionFirstUppercase();
-        int result = rfu.first("appmillerS");
+        int result = RecursionFirstUppercase.first("appmillerS");
         System.out.println(result);
 
     }
