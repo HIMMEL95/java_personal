@@ -15,7 +15,7 @@ public class Question12 {
 				else
 					System.out.printf("%3d", i*j);
 			}
-			System.out.println(" ");
+			System.out.println();
 		}
 	}
 
