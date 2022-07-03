@@ -16,12 +16,11 @@ public class Question13 {
 					else if (i == 0) {
 						System.out.printf("%3d", j);
 					}
-					else if (j == 0 && i != 1) {
-						System.out.printf("%3d", i-1);
+					else if (j == 0) {
+						System.out.printf("%2d|", i-1);
 					}
-					else {
+					else
 						System.out.printf("%3d", (i-1)+j);
-					}
 				}
 			}
 			System.out.println();
