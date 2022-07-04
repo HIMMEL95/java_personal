@@ -19,7 +19,7 @@ public class sortCoordinate {
 			map.put(a, b);
 		}
 		
-		Set set = map.entrySet();
+		Set<?> set = map.entrySet();
 		System.out.println(set);
 		sc.close();
 	}
