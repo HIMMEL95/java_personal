@@ -1,4 +1,5 @@
 package java_personal.Baekjoon.if_;
+
 import java.util.Scanner;
 
 class OvenClock {

@@ -1,4 +1,5 @@
 package java_personal.Baekjoon.for_;
+
 import java.util.Scanner;
 
 class NSum {
