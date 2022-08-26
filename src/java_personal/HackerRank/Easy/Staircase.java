@@ -1,3 +1,5 @@
+package java_personal.HackerRank.Easy;
+
 import java.io.*;
 
 public class Staircase {
@@ -6,13 +8,13 @@ public class Staircase {
 
         int n = Integer.parseInt(bufferedReader.readLine().trim());
 
-        Result.staircase(n);
+        Result1.staircase(n);
 
         bufferedReader.close();
     }
 }
 
-class Result {
+class Result1 {
 
     public static void staircase(int n) {
     // Write your code here

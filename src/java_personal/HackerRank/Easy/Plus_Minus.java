@@ -1,3 +1,5 @@
+package java_personal.HackerRank.Easy;
+
 import java.io.*;
 import java.util.*;
 import java.util.stream.*;
