@@ -28,13 +28,22 @@ public class ScoreBoard {
 		map.put(8, new int[] {1,1,1,1,1,1,1});
 		map.put(9, new int[] {1,1,1,1,1,0,1});
 		
+		
+		
 		for (int i=0; i<T; i++) {
 			st = new StringTokenizer(br.readLine());
 			int a = Integer.parseInt(st.nextToken());
 			int b = Integer.parseInt(st.nextToken());
 			
+			int[] N = new int[a];
+			int[] M = new int[b];
+			
+			for (int j=0; j<5-a; j++) {
+				N[i] = map.get(1);
+			}
+
 		}
 		
 	}
-
+	
 }
