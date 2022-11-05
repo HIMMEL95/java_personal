@@ -38,9 +38,6 @@ public class ScoreBoard {
 			int[] N = new int[a];
 			int[] M = new int[b];
 			
-			for (int j=0; j<5-a; j++) {
-				N[i] = map.get(1);
-			}
 
 		}
 		
