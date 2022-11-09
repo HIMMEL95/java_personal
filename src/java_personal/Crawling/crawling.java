@@ -7,6 +7,5 @@ public class crawling {
 
     final static String address = "http://localhost:8080/rest/member";
 
-    Connection conn = Jsoup.connect(address);
     
 }
