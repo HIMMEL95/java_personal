@@ -7,6 +7,6 @@ public class Uniquecharacters {
     public int firstUniqChar(String s) {
         Map<Character, Integer> chars = new HashMap<>();
 
-        
+        return 1;
     }
 }
