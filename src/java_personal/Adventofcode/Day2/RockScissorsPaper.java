@@ -12,8 +12,6 @@ public class RockScissorsPaper{
 	public static void read() throws Exception {
 		BufferedReader reader = new BufferedReader(new FileReader("./src/java_personal/Adventofcode/Day2/input.txt"));
 		
-		
-		
 		String str;
 		int score = 0;
 		while ((str = reader.readLine()) != null) {
