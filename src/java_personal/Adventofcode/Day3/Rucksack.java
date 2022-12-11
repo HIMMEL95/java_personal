@@ -44,7 +44,7 @@ public class Rucksack {
 		return sum;
 	}
 
-	public static String[] Reorganization() throws Exception {
+	public static int Reorganization() throws Exception {
 		List<String> lineList = Files.readAllLines(Paths.get("./inputs/DAY3/input.txt"));
 		String[] linesArray = lineList.toArray(new String[0]);
 
@@ -63,7 +63,6 @@ public class Rucksack {
 			for (int j=0; j<linesArray[i].length(); j++) {
 				set.add(linesArray[i].charAt(j));
 			}
-
 			String str = "";
 			for (Character a : set) {
 				str += Character.toString(a);
@@ -71,9 +70,9 @@ public class Rucksack {
 			listArr.add(str);
 		}
 
+		List<Integer> result = new ArrayList<>();
 		for (int i=0; i<listArr.size(); i+=3) {
 			Set<Character> set = new LinkedHashSet<>();
- 			String same2 = "";
 			for (int j=0; j<listArr.get(i+1).length(); j++) {
 				String str = Character.toString(listArr.get(i+1).charAt(j));
 				if (listArr.get(i).contains(str)) {
@@ -81,22 +80,31 @@ public class Rucksack {
 				}
 			}
 
-			System.out.println(set);
-			for (int j=0; j< listArr.get(i+2).length(); j++) {
-				String str = Character.toString(listArr.get(i+2).charAt(j));
-				if (set.contains(str) == true) {
-					same2 = str;
-					System.out.println(same2);
+			for (int j=0; j<listArr.get(i+2).length(); j++) {
+				if (set.contains(listArr.get(i+2).charAt(j))) {
+					if (Character.isUpperCase(listArr.get(i+2).charAt(j))) {
+						result.add(uppercase.get(listArr.get(i+2).charAt(j)));
+					} else {
+						result.add(lowercase.get(listArr.get(i+2).charAt(j)));
+					}
+//					break;
 				}
 			}
 		}
-		return linesArray;
+
+		int count = 0;
+		for (Integer sum : result) {
+			count += sum;
+		}
+
+		return count;
 	}
 
 	public static void main(String[] args) throws Exception {
 //		System.out.println(sumOfCommonCharacter());
 
 		Reorganization();
+		System.out.println(Reorganization());
 	}
 
 }
