@@ -63,6 +63,7 @@ public class Rucksack {
 			for (int j=0; j<linesArray[i].length(); j++) {
 				set.add(linesArray[i].charAt(j));
 			}
+
 			String str = "";
 			for (Character a : set) {
 				str += Character.toString(a);
