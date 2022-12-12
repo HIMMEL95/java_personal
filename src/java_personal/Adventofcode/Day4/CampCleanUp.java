@@ -47,14 +47,14 @@ public class CampCleanUp {
             inputArr.add(Arrays.toString(lines));
         }
 
-        int fs=0, fe=0, ss=0, se=0, count =0;
+        int count=0;
         for (int i=0; i< inputArr.size(); i++) {
             String[] str = inputArr.get(i).split(", ");
 
-            fs = Integer.parseInt(str[0].replace("[", ""));
-            fe = Integer.parseInt(str[1]);
-            ss = Integer.parseInt(str[2]);
-            se = Integer.parseInt(str[3].replace("]", ""));
+            int fs = Integer.parseInt(str[0].replace("[", ""));
+            int fe = Integer.parseInt(str[1]);
+            int ss = Integer.parseInt(str[2]);
+            int se = Integer.parseInt(str[3].replace("]", ""));
 
             if ((fs <= ss && fe >= ss) || (fs <= se && fe >= se)) count++;
             else if ((ss <= fs && se >= fs) || (ss <= fe && se >= fe)) count++;
