@@ -16,25 +16,31 @@ public class RomanToInteger {
         }
 
         int result = 0;
-        if (s.contains("IV")) {
-            result += 4;
-            s = s.replace("IV", "");
-        } else if (s.contains("IX")) {
-            result += 9;
-            s = s.replace("IX", "");
-        } else if (s.contains("XL")) {
-            result += 40;
-            s = s.replace("XL", "");
-        } else if (s.contains("XC")) {
-            result += 90;
-            s = s.replace("XC", "");
-        } else if (s.contains("CD")) {
-            result += 400;
-            s = s.replace("CD", "");
-        } else if (s.contains("CM")) {
-            result += 900;
-            s = s.replace("CM", "");
-            System.out.println(s);
+
+        Boolean type = true;
+
+        while (type) {
+            if (s.contains("IV")) {
+                result += 4;
+                s = s.replace("IV", "");
+            } else if (s.contains("IX")) {
+                result += 9;
+                s = s.replace("IX", "");
+            } else if (s.contains("XL")) {
+                result += 40;
+                s = s.replace("XL", "");
+            } else if (s.contains("XC")) {
+                result += 90;
+                s = s.replace("XC", "");
+            } else if (s.contains("CD")) {
+                result += 400;
+                s = s.replace("CD", "");
+            } else if (s.contains("CM")) {
+                result += 900;
+                s = s.replace("CM", "");
+            } else {
+                type = false;
+            }
         }
 
         for (int i=0; i<s.length(); i++) {
@@ -51,6 +57,8 @@ public class RomanToInteger {
         s = "LVIII";
         System.out.println(solution(s));
         s = "MCMXCIV";
+        System.out.println(solution(s));
+        s = "CMXCIX";
         System.out.println(solution(s));
     }
 }
