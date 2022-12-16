@@ -14,9 +14,6 @@ public class ScoreAvg {
         N = Integer.parseInt(st.nextToken());
         K = Integer.parseInt(st.nextToken());
         
-        System.out.println("N : " + N);
-        System.out.println("N : " + K);
- 
         st = new StringTokenizer(bf.readLine());
         int[] arr = new int[N+1];
         for(int i = 1; i <= N; i++) {
