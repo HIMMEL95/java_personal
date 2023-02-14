@@ -1,10 +1,10 @@
-package java_personal.JavaCodingInterView.Chapter6.Abstract;
+package java_personal.JavaCodingInterView.Chapter6.OOP_Programming_Concepts.Abstract;
 
-public class PetrolCar implements Car {
+public class ElectricCar implements Car {
 
     private final String carType;
 
-    public PetrolCar(String carType) {
+    public ElectricCar(String carType) {
         this.carType = carType;
     }
 

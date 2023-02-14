@@ -1,4 +1,4 @@
-package java_personal.JavaCodingInterView.Chapter6.Abstract;
+package java_personal.JavaCodingInterView.Chapter6.OOP_Programming_Concepts.Abstract;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package java_personal.JavaCodingInterView.Chapter6.Abstract;
+package java_personal.JavaCodingInterView.Chapter6.OOP_Programming_Concepts.Abstract;
 
 public interface Car {
     public void speedUp();
