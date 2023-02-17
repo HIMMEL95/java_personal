@@ -15,8 +15,8 @@ public class RectangleAreaCalculator {
         return width * height;
     }
 
-    // 이 메서드는 단일 책임 원칙에 맞지 않는다.
+ /*   // 이 메서드는 단일 책임 원칙에 맞지 않는다.
     public double metersToInches(int area) {
         return area / INCH_TERM;
-    }
+    }*/
 }
